@@ -4,7 +4,7 @@ import Type from "./Type";
 
 const Home = () => {
   return (
-    <div className="lg:py-24 flex flex-col lg:flex-row items-center justify-center lg:justify-between bg-gradient-to-r from-indigo-900 to-purple-900 px-10 shadow-lg">
+    <div className="lg:py-24 flex flex-col lg:flex-row items-center mt-8 justify-center lg:justify-between bg-gradient-to-r from-indigo-900 to-purple-900 px-10 shadow-lg">
       <div className="text-center lg:text-left lg:w-1/2 mb-10 lg:mb-0">
         <h1 className="text-5xl font-bold text-white mb-4">
           Hi, I am Uttpol Roy
