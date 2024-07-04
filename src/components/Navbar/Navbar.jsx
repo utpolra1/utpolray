@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
@@ -8,19 +8,31 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false); // State to manage dropdown visibility
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
   const showSection = (section) => {
     // Implement logic to show/hide sections based on section parameter
     console.log(`Showing ${section} section`);
+    setShowDropdown(false); // Close dropdown after clicking a link
   };
 
   return (
-    <div className="navbar bg-purple-950 fixed top-0 w-full z-50 overflow-hidden">
+    <div className="navbar bg-purple-950 fixed top-0 w-[85.5%] lg:w-[80.1%] z-50">
       <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+        <div className="dropdown relative">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden"
+            onClick={toggleDropdown}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-6 w-8 text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -34,8 +46,7 @@ const Navbar = () => {
             </svg>
           </div>
           <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-purple-950 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className={`menu menu-sm dropdown-content bg-purple-950 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute lg:static ${showDropdown ? "block" : "hidden"}`}
           >
             <li className="text-white">
               <Link to="/" onClick={() => showSection('home')}>

@@ -21,13 +21,13 @@ const skills = [
 
 const SkillsDashboard = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-indigo-900 to-purple-900 text-white flex flex-col items-center py-10">
+    <div className="min-h-screen bg-gradient-to-r from-indigo-900 to-purple-900 text-white flex flex-col items-center px-6 py-10">
       <h1 className="text-4xl font-bold mb-10">My Skills</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
-          <div key={index} className="card w-52 bg-gray-800 hover:bg-purple-700 shadow-xl">
+          <div key={index} className="card lg:w-52 bg-gray-800 hover:bg-purple-700 shadow-xl">
             <div className="card-body items-center text-center">
-              <div className="text-6xl mb-4">{skill.icon}</div>
+              <div className="text-6xl lg:mb-4">{skill.icon}</div>
               <h2 className="card-title">{skill.name}</h2>
               <p className="text-sm">Level: {skill.level}</p>
             </div>

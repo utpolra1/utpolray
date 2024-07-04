@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-gradient-to-r from-indigo-900 to-purple-900">
+    <div className="bg-gradient-to-r from-indigo-900 to-purple-900 px-6 py-10">
       <h2 className="text-4xl font-bold text-white mb-6 text-center">Contract Me</h2>
       <section className=" flex justify-center items-center">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -17,7 +17,7 @@ const ContactForm = () => {
           </div>
           <div className="w-full md:w-1/2 bg-blue-950 p-8 rounded-lg shadow-lg">
             <form className="space-y-4">
-              <div>
+              <div> 
                 <label htmlFor="email" className="block text-white">
                   Your Email
                 </label>

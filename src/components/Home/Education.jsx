@@ -15,7 +15,7 @@ const Education = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-indigo-900 to-purple-900">
+    <section className="py-16 bg-gradient-to-r from-indigo-900 to-purple-900 px-6">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">Education</h2>
