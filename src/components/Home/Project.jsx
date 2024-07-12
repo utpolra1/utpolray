@@ -9,9 +9,10 @@ const Projects = () => {
       title: "battle-for-supremacy",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       imageUrl: "https://i.ibb.co/TKMx34Q/Screenshot-2024-07-03-224345.png",
-      tags: ["JavaScript", "Next.js", "React", "Tailwind CSS", "DaisyUI"],
+      tags: ["JavaScript", "React", "Tailwind CSS", "DaisyUI"],
       live: "https://b9-battle-for-supremacy.web.app/",
-      github:"https://github.com/utpolra1/B9-Battle-For-Supremacy"
+      github:"https://github.com/utpolra1/B9-Battle-For-Supremacy",
+      server:'https://github.com/utpolra1/B9-Battle-For-Supremacy-Server'
     },
     {
       id: 2,
@@ -19,9 +20,10 @@ const Projects = () => {
       description:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imageUrl: "https://i.ibb.co/hcgr5PM/Screenshot-2024-07-03-230103.png",
-      tags: ["JavaScript", "Next.js", "React", "Tailwind CSS", "DaisyUI"],
+      tags: ["JavaScript", "React", "Tailwind CSS", "DaisyUI"],
       live: "https://b9-crud-and-jwt-client.web.app/",
-      github:"https://github.com/utpolra1/CRUD-and-JWT-Client"
+      github:"https://github.com/utpolra1/CRUD-and-JWT-Client",
+      server:'https://github.com/utpolra1/CRUD-and-JWT-server'
     },
     {
       id: 3,
@@ -29,7 +31,7 @@ const Projects = () => {
       description:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imageUrl: "https://i.ibb.co/9p0cDvY/Screenshot-2024-07-03-232612.png",
-      tags: ["JavaScript", "CSS", "HTML"],
+      tags: ["JavaScript", "CSS", "HTML","React","DaisyUI",],
       live: "https://b9a9-real-estate-99389.web.app/",
       github:"https://github.com/utpolra1/assinment-9"
     },
@@ -63,7 +65,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="gap-4 flex pt-4">
+                <div className="grid grid-cols-2 gap-2 pt-4">
                   <a
                     href={project.live}
                     target="_blank"
@@ -78,8 +80,16 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="btn btn-accent"
                   >
-                    Github Code
-                  </a>{" "}
+                    Github Client Code
+                  </a>
+                  <a
+                    href={project.server}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-accent"
+                  >
+                    Github Server
+                  </a>
                 </div>
               </div>
             ))}

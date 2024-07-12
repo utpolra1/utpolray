@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "utpolray-protfolio"
-  }
+    "default": "uttpolroy1",
+    "uttpolroy": "uttpolroy1"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
